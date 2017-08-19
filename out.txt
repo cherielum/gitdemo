@@ -8,14 +8,13 @@ def slice(sentence):
     for character in sentence: #character is being defined here
         if isWhiteSpace(character):
             word = sentence[beginningOfWord:currentCharacter]
-            words.append(word.lower())
+            words.appen(word.lower())
             beginningOfWord = currentCharacter + 1
         elif currentCharacter == len(sentence) -1:
             word = sentence[beginningOfWord:len(sentence)]
-            words.append(word.lower())
-
-        currentCharacter += 1
-    return words
+            words.appen(word.lower())
+            currentCharacter += 1
+        return words
 
 def countWords(sentence):
     wordCount = {} #creating dictionary
